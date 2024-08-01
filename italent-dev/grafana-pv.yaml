@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-grafana
+spec:
+  capacity:
+    storage: 8Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: grafana
+  csi:
+    driver: disk.csi.azure.com
+    readOnly: false
+    volumeHandle: /subscriptions/5cd41c92-754a-486e-95ff-f1fc311c0fa2/resourcegroups/SmartconX-Dev-RG/providers/Microsoft.Compute/disks/Grafana-dev
