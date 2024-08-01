@@ -239,7 +239,7 @@ grafana:
         enabled: true
         host: smtp.office365.com:587
         user: cron@italentdigital.com
-        password: PG73NujEhi8FOma
+        password: ....
         skip_verify: true
         from_name: Grafana_STG_ICS
         from_address: cron@italentdigital.com
